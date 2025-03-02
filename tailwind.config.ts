@@ -1,4 +1,5 @@
 
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -30,34 +31,34 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#9b87f5',
+					DEFAULT: '#23978F',
 					foreground: '#ffffff',
-					50: '#f5f3ff',
-					100: '#ede8ff',
-					200: '#dbd0ff',
-					300: '#c3b0ff',
-					400: '#aa8eff',
-					500: '#9b87f5',
-					600: '#7c5fea',
-					700: '#6e59a5',
-					800: '#4c3e72',
-					900: '#1A1F2C',
+					50: '#E6F5F3',
+					100: '#CCE9E6',
+					200: '#99D3CE',
+					300: '#66BDB5',
+					400: '#33A79D',
+					500: '#23978F',
+					600: '#1C7972',
+					700: '#165C56',
+					800: '#0F3E39',
+					900: '#0E3331',
 				},
 				secondary: {
-					DEFAULT: '#e5deff',
-					foreground: '#1A1F2C'
+					DEFAULT: '#F2D669',
+					foreground: '#0E3331'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'
 				},
 				muted: {
-					DEFAULT: '#f5f3ff',
-					foreground: '#6e59a5'
+					DEFAULT: '#129C75',
+					foreground: '#ffffff'
 				},
 				accent: {
-					DEFAULT: '#d6bcfa',
-					foreground: '#4c3e72'
+					DEFAULT: '#E18B7B',
+					foreground: '#0E3331'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -159,3 +160,4 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+

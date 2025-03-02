@@ -91,7 +91,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-primary-50">
+    <div className="min-h-screen bg-gradient-to-b from-dark-green to-primary-900">
       <Header onNavigate={handleNavigation} />
       
       <main>

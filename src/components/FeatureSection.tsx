@@ -33,32 +33,32 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
       >
         <div className={cn("flex flex-col space-y-6", isReversed && "md:order-2")}>
           <div className="inline-flex">
-            <span className="bg-primary-100 text-primary-800 px-4 py-1 rounded-full text-sm font-medium">
+            <span className="bg-secondary text-dark-green px-4 py-1 rounded-full text-sm font-medium">
               {title}
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-700 to-primary-900">
+          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-secondary">
             {title}
           </h2>
-          <p className="text-lg text-primary-800/80">
+          <p className="text-lg text-white/80">
             {description}
           </p>
           <ul className="space-y-3">
             {features.map((feature, index) => (
               <li key={index} className="flex items-start">
-                <span className="flex-shrink-0 h-6 w-6 bg-primary-100 rounded-full flex items-center justify-center mr-3">
+                <span className="flex-shrink-0 h-6 w-6 bg-muted rounded-full flex items-center justify-center mr-3">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.5 6L5 7.5L8.5 4" stroke="#7c5fea" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M3.5 6L5 7.5L8.5 4" stroke="#F2D669" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </span>
-                <span className="text-primary-700">{feature}</span>
+                <span className="text-white">{feature}</span>
               </li>
             ))}
           </ul>
         </div>
         
         <div className={cn(
-          "relative h-80 md:h-[500px] rounded-2xl overflow-hidden glass-card flex items-center justify-center bg-gradient-to-br from-primary-50 to-primary-100/50",
+          "relative h-80 md:h-[500px] rounded-2xl overflow-hidden glass-card flex items-center justify-center bg-gradient-to-br from-primary-900 to-primary-800/50",
           isReversed && "md:order-1"
         )}>
           {children}
