@@ -97,7 +97,7 @@ const Index = () => {
       <main>
         <HeroSection />
         
-        <div ref={mealRef}>
+        <div ref={mealRef} className="relative">
           <FeatureSection
             id="meal"
             title="Meal Tracking"
@@ -110,11 +110,13 @@ const Index = () => {
               "Smart Suggestions: Receive personalized recommendations based on your goals and eating habits."
             ]}
           >
-            <ThreeJSScene activeModel="meal" />
+            <div className="relative h-[350px] md:h-[400px] w-full">
+              <ThreeJSScene activeModel="meal" />
+            </div>
           </FeatureSection>
         </div>
         
-        <div ref={workoutRef}>
+        <div ref={workoutRef} className="relative">
           <FeatureSection
             id="workout"
             title="Workout Tracking"
@@ -128,11 +130,13 @@ const Index = () => {
             ]}
             isReversed
           >
-            <ThreeJSScene activeModel="workout" />
+            <div className="relative h-[350px] md:h-[400px] w-full">
+              <ThreeJSScene activeModel="workout" />
+            </div>
           </FeatureSection>
         </div>
         
-        <div ref={notesRef}>
+        <div ref={notesRef} className="relative">
           <FeatureSection
             id="notes"
             title="Note Taking"
@@ -145,11 +149,13 @@ const Index = () => {
               "Insight Generation: Receive periodic summaries and insights based on your journaling patterns."
             ]}
           >
-            <ThreeJSScene activeModel="notes" />
+            <div className="relative h-[350px] md:h-[400px] w-full">
+              <ThreeJSScene activeModel="notes" />
+            </div>
           </FeatureSection>
         </div>
         
-        <div ref={goalsRef}>
+        <div ref={goalsRef} className="relative">
           <FeatureSection
             id="goals"
             title="Goals & Tasks"
@@ -163,7 +169,9 @@ const Index = () => {
             ]}
             isReversed
           >
-            <ThreeJSScene activeModel="goals" />
+            <div className="relative h-[350px] md:h-[400px] w-full">
+              <ThreeJSScene activeModel="goals" />
+            </div>
           </FeatureSection>
         </div>
         

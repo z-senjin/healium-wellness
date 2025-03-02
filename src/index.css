@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -71,7 +72,7 @@
 }
 
 .button-glow {
-  box-shadow: 0 0 15px 2px rgba(155, 135, 245, 0.5);
+  box-shadow: 0 0 15px 2px rgba(35, 151, 143, 0.5);
 }
 
 .feature-section {
@@ -103,5 +104,5 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
 }

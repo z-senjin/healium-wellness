@@ -26,7 +26,7 @@ const CtaSection: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button 
               size="lg"
-              className="bg-gradient-to-r from-muted to-primary hover:from-muted hover:to-primary-600 text-white shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 button-glow w-full sm:w-auto"
+              className="bg-gradient-to-r from-muted to-primary hover:from-muted hover:to-primary-600 text-white shadow-lg transition-all duration-300 hover:shadow-xl button-glow w-full sm:w-auto"
             >
               Download Healium
             </Button>
