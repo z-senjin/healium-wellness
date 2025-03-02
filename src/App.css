@@ -42,3 +42,34 @@
   color: #F2D669;
 }
 
+/* Enhanced styles for 3D visualization */
+.three-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: opacity 0.5s ease;
+}
+
+/* Enhanced glass card effect */
+.glass-card {
+  box-shadow: 0 8px 32px rgba(14, 51, 49, 0.2);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  box-shadow: 0 12px 48px rgba(14, 51, 49, 0.3);
+  transform: translateY(-5px);
+}
+
+/* Enhanced button glow */
+.button-glow {
+  box-shadow: 0 0 20px 2px rgba(35, 151, 143, 0.5);
+  transition: all 0.3s ease;
+}
+
+.button-glow:hover {
+  box-shadow: 0 0 25px 5px rgba(35, 151, 143, 0.7);
+}

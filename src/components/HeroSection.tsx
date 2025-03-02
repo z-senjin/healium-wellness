@@ -7,15 +7,15 @@ const HeroSection: React.FC = () => {
     <section className="relative pt-32 pb-16 md:pb-24 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto text-center">
         <span className="inline-block animate-fade-in bg-secondary text-dark-green px-4 py-1 rounded-full text-sm font-medium mb-6">
-          Your Complete Wellness Companion
+          Your Holistic Wellness Companion
         </span>
         
         <h1 className="text-5xl md:text-7xl font-bold animate-fade-in bg-clip-text text-transparent bg-gradient-to-r from-white to-secondary mb-6 leading-tight">
-          Transform Your Health Journey
+          Transform Your Health & Wellness Journey
         </h1>
         
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/80 animate-fade-in mb-8">
-          Healium combines meal tracking, workout logging, note-taking, and goal setting in one beautiful app to help you achieve your wellness goals.
+          Healium integrates all aspects of your wellness journey in one beautiful app. Track meals, log workouts, capture insights, and achieve your goals—all with a mindful, personalized approach.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in">
@@ -39,7 +39,8 @@ const HeroSection: React.FC = () => {
             <div className="aspect-[16/9] bg-gradient-to-br from-primary-800 to-primary-900/50 flex items-center justify-center">
               <div className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-white mb-4">Healium Mobile App</h3>
-                <p className="text-secondary">Your all-in-one wellness solution</p>
+                <p className="text-secondary mb-2">Your all-in-one wellness solution</p>
+                <p className="text-white/70 text-sm max-w-md mx-auto">Designed with mindfulness at its core, Healium helps you create sustainable wellness habits that last a lifetime.</p>
               </div>
             </div>
           </div>

@@ -43,15 +43,18 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
           <p className="text-lg text-white/80">
             {description}
           </p>
-          <ul className="space-y-3">
+          <ul className="space-y-4">
             {features.map((feature, index) => (
               <li key={index} className="flex items-start">
-                <span className="flex-shrink-0 h-6 w-6 bg-muted rounded-full flex items-center justify-center mr-3">
+                <span className="flex-shrink-0 h-6 w-6 bg-muted rounded-full flex items-center justify-center mr-3 mt-1">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.5 6L5 7.5L8.5 4" stroke="#F2D669" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </span>
-                <span className="text-white">{feature}</span>
+                <div>
+                  <span className="text-white font-medium">{feature.split(':')[0]}</span>
+                  <p className="text-white/70 text-sm mt-1">{feature.split(':')[1] || ''}</p>
+                </div>
               </li>
             ))}
           </ul>

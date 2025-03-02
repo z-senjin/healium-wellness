@@ -101,13 +101,13 @@ const Index = () => {
           <FeatureSection
             id="meal"
             title="Meal Tracking"
-            description="Track your nutrition and plan your meals with ease. Keep a detailed food diary and monitor your caloric intake."
+            description="Take control of your nutrition with Healium's intuitive meal tracking system. Our app makes it simple to monitor what you eat, understand your nutritional intake, and make healthier food choices every day."
             features={[
-              "Log your daily meals and snacks",
-              "Track calories and macronutrients",
-              "Create custom meal plans",
-              "Discover healthy recipes",
-              "Set nutrition goals and track progress"
+              "Comprehensive Food Diary: Record all your meals, snacks, and beverages with our easy-to-use interface.",
+              "Nutritional Insights: Track calories, macronutrients, and micronutrients to understand your dietary patterns.",
+              "Meal Planning Tools: Create weekly meal plans based on your nutritional goals and preferences.",
+              "Recipe Inspiration: Discover hundreds of healthy, delicious recipes tailored to your dietary needs.",
+              "Smart Suggestions: Receive personalized recommendations based on your goals and eating habits."
             ]}
           >
             <ThreeJSScene activeModel="meal" />
@@ -118,13 +118,13 @@ const Index = () => {
           <FeatureSection
             id="workout"
             title="Workout Tracking"
-            description="Log your fitness activities and monitor your progress over time. Customize workouts to fit your routine."
+            description="Transform your fitness routine with Healium's comprehensive workout tracking features. Whether you're a beginner or fitness enthusiast, our app helps you log activities, monitor progress, and stay motivated on your journey."
             features={[
-              "Record workout duration and intensity",
-              "Track weights, sets, and reps",
-              "Monitor cardio and strength training",
-              "View progress with detailed analytics",
-              "Set fitness goals and celebrate achievements"
+              "Activity Logger: Track all types of exercises from strength training to cardio, yoga, and more.",
+              "Progress Visualization: See your improvement over time with intuitive charts and analytics.",
+              "Custom Workout Builder: Create and save personalized workout routines tailored to your goals.",
+              "Exercise Library: Access hundreds of exercises with proper form instructions and video guides.",
+              "Integration with Wearables: Connect with popular fitness devices for automatic activity tracking."
             ]}
             isReversed
           >
@@ -136,13 +136,13 @@ const Index = () => {
           <FeatureSection
             id="notes"
             title="Note Taking"
-            description="Capture your thoughts, insights, and wellness journey. Keep track of how you feel and what works for you."
+            description="Capture your thoughts, insights, and wellness journey with Healium's thoughtful note-taking system. Document your experiences, track patterns, and gain valuable insights about your overall wellbeing."
             features={[
-              "Create wellness journals and diaries",
-              "Add mood tracking to your entries",
-              "Organize notes with custom tags",
-              "Add photos to document your progress",
-              "Search through your past entries"
+              "Wellness Journal: Record your daily experiences, emotions, and reflections in a secure digital journal.",
+              "Mood Tracking: Monitor your emotional wellbeing and identify patterns that affect your mental health.",
+              "Media Integration: Add photos, voice notes, and other media to enrich your entries and memories.",
+              "Organizational Tools: Tag, categorize, and search your notes for easy reference and pattern recognition.",
+              "Insight Generation: Receive periodic summaries and insights based on your journaling patterns."
             ]}
           >
             <ThreeJSScene activeModel="notes" />
@@ -153,13 +153,13 @@ const Index = () => {
           <FeatureSection
             id="goals"
             title="Goals & Tasks"
-            description="Set health and wellness goals, break them into manageable tasks, and track your progress along the way."
+            description="Achieve your wellness aspirations with Healium's powerful goal-setting and task management features. Break down ambitious health goals into manageable steps and track your progress every step of the way."
             features={[
-              "Create short and long-term health goals",
-              "Break goals into actionable tasks",
-              "Set reminders for important activities",
-              "Track completion and success rates",
-              "View progress with visual dashboards"
+              "Goal Framework: Set SMART (Specific, Measurable, Achievable, Relevant, Time-bound) health goals.",
+              "Task Breakdown: Divide large goals into smaller, actionable tasks that build toward success.",
+              "Progress Tracking: Monitor completion rates and celebrate milestones along your journey.",
+              "Habit Formation: Transform one-time tasks into lasting habits with our scientifically-backed system.",
+              "Accountability Tools: Set reminders, create challenges, or find accountability partners for support."
             ]}
             isReversed
           >
