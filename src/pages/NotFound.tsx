@@ -1,5 +1,7 @@
-import { useLocation } from "react-router-dom";
+
+import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
 
 const NotFound = () => {
   const location = useLocation();
@@ -12,13 +14,27 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-primary-50 px-6">
+      <div className="text-center glass-card p-12 max-w-md w-full">
+        <span className="inline-block bg-primary-100 text-primary-800 px-4 py-1 rounded-full text-sm font-medium mb-6">
+          Page Not Found
+        </span>
+        
+        <h1 className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-700 to-primary-500 mb-6">
+          404
+        </h1>
+        
+        <p className="text-lg text-primary-800/80 mb-8">
+          The page you're looking for doesn't exist or has been moved.
+        </p>
+        
+        <Link to="/">
+          <Button 
+            className="bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 button-glow"
+          >
+            Return to Home
+          </Button>
+        </Link>
       </div>
     </div>
   );
