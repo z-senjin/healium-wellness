@@ -1,18 +1,8 @@
 
-import { createMealModel } from './mealModel';
-import { createWorkoutModel } from './workoutModel';
-import { createNotesModel } from './notesModel';
-import { createGoalsModel } from './goalsModel';
-import { ModelType } from '../modelTypes';
-import * as THREE from 'three';
+import { MealModel } from './mealModel';
+import { WorkoutModel } from './workoutModel';
+import { NotesModel } from './notesModel';
+import { GoalsModel } from './goalsModel';
 
-export function createModels(): Record<string, THREE.Group> {
-  return {
-    meal: createMealModel(),
-    workout: createWorkoutModel(),
-    notes: createNotesModel(),
-    goals: createGoalsModel()
-  };
-}
-
-export { createMealModel, createWorkoutModel, createNotesModel, createGoalsModel };
+// Export all model components
+export { MealModel, WorkoutModel, NotesModel, GoalsModel };
