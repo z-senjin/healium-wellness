@@ -3,11 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '../components/ui/button';
 import { cn } from '@/lib/utils';
 
-interface HeaderProps {
-  onNavigate: (section: string) => void;
-}
-
-const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
+const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -35,25 +31,21 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
         
         <nav className="hidden md:flex space-x-6">
           <button 
-            onClick={() => onNavigate('meal')}
             className="text-white hover:text-secondary font-medium transition-colors duration-200"
           >
             Meal Tracking
           </button>
           <button 
-            onClick={() => onNavigate('workout')}
             className="text-white hover:text-secondary font-medium transition-colors duration-200"
           >
             Workouts
           </button>
           <button 
-            onClick={() => onNavigate('notes')}
             className="text-white hover:text-secondary font-medium transition-colors duration-200"
           >
             Notes
           </button>
           <button 
-            onClick={() => onNavigate('goals')}
             className="text-white hover:text-secondary font-medium transition-colors duration-200"
           >
             Goals

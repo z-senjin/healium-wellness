@@ -6,91 +6,18 @@ import HeroSection from '@/components/HeroSection';
 import FeatureSection from '@/components/FeatureSection';
 import CtaSection from '@/components/CtaSection';
 import Footer from '@/components/Footer';
+import SceneWrapper from '@/components/threejs/SceneWrapper';
 
 const Index = () => {
-  const [activeModel, setActiveModel] = useState<ModelType>('meal');
   const mealRef = useRef<HTMLDivElement>(null);
   const workoutRef = useRef<HTMLDivElement>(null);
   const notesRef = useRef<HTMLDivElement>(null);
   const goalsRef = useRef<HTMLDivElement>(null);
   const isMobile = useIsMobile();
 
-  // Handle navigation from header
-  const handleNavigation = (section: string) => {
-    let ref: React.RefObject<HTMLDivElement> | null = null;
-    
-    switch (section) {
-      case 'meal':
-        ref = mealRef;
-        setActiveModel('meal');
-        break;
-      case 'workout':
-        ref = workoutRef;
-        setActiveModel('workout');
-        break;
-      case 'notes':
-        ref = notesRef;
-        setActiveModel('notes');
-        break;
-      case 'goals':
-        ref = goalsRef;
-        setActiveModel('goals');
-        break;
-      default:
-        break;
-    }
-    
-    if (ref?.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  // Update active model based on scroll position
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + window.innerHeight / 2;
-      
-      const sections = [
-        { ref: mealRef, type: 'meal' },
-        { ref: workoutRef, type: 'workout' },
-        { ref: notesRef, type: 'notes' },
-        { ref: goalsRef, type: 'goals' },
-      ];
-      
-      for (const { ref, type } of sections) {
-        if (ref.current) {
-          const offsetTop = ref.current.offsetTop;
-          const height = ref.current.offsetHeight;
-          
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + height) {
-            setActiveModel(type as ModelType);
-            break;
-          }
-        }
-      }
-    };
-    
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
-    // Add Three.js script dynamically
-    const script = document.createElement('script');
-    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
-    script.async = true;
-    document.body.appendChild(script);
-    
-    return () => {
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-dark-green to-primary-900">
-      <Header onNavigate={handleNavigation} />
+      <Header />
       
       <main>
         <HeroSection />
@@ -109,7 +36,7 @@ const Index = () => {
             ]}
           >
             <div className="relative h-[350px] md:h-[400px] w-full">
-              {/* <ThreeJSScene activeModel="meal" /> */}
+              <SceneWrapper />
             </div>
           </FeatureSection>
         </div>
