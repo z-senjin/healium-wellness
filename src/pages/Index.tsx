@@ -6,8 +6,6 @@ import HeroSection from '@/components/HeroSection';
 import FeatureSection from '@/components/FeatureSection';
 import CtaSection from '@/components/CtaSection';
 import Footer from '@/components/Footer';
-import ThreeJSScene from '@/components/ThreeJSScene';
-import { ModelType } from '@/utils/threeScene';
 
 const Index = () => {
   const [activeModel, setActiveModel] = useState<ModelType>('meal');
@@ -111,7 +109,7 @@ const Index = () => {
             ]}
           >
             <div className="relative h-[350px] md:h-[400px] w-full">
-              <ThreeJSScene activeModel="meal" />
+              {/* <ThreeJSScene activeModel="meal" /> */}
             </div>
           </FeatureSection>
         </div>
@@ -131,7 +129,7 @@ const Index = () => {
             isReversed
           >
             <div className="relative h-[350px] md:h-[400px] w-full">
-              <ThreeJSScene activeModel="workout" />
+              {/* <ThreeJSScene activeModel="workout" /> */}
             </div>
           </FeatureSection>
         </div>
@@ -150,7 +148,7 @@ const Index = () => {
             ]}
           >
             <div className="relative h-[350px] md:h-[400px] w-full">
-              <ThreeJSScene activeModel="notes" />
+              {/* <ThreeJSScene activeModel="notes" /> */}
             </div>
           </FeatureSection>
         </div>
@@ -170,7 +168,7 @@ const Index = () => {
             isReversed
           >
             <div className="relative h-[350px] md:h-[400px] w-full">
-              <ThreeJSScene activeModel="goals" />
+              {/* <ThreeJSScene activeModel="goals" /> */}
             </div>
           </FeatureSection>
         </div>
